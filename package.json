@@ -1,0 +1,17 @@
+{
+  "name": "controle-de-estoque-simples",
+  "version": "1.0.0",
+  "description": "Um controle de estoque simples usando Javascript",
+  "main": "index.js",
+  "scripts": {
+    "json:server": "json-server --watch db.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "json-server": "^0.14.2",
+    "popper.js": "^1.14.7"
+  }
+}

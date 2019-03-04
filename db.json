@@ -1,0 +1,71 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nomeProduto": "S7 Edge",
+      "valor": 2150.5,
+      "quantidade": 7,
+      "marcaId": 1
+    },
+    {
+      "id": 2,
+      "nomeProduto": "iPhone X",
+      "valor": 4290,
+      "quantidade": 3,
+      "marcaId": 2
+    },
+    {
+      "id": 3,
+      "nomeProduto": "Surface Pro",
+      "valor": 8500.5,
+      "quantidade": 5,
+      "marcaId": 3
+    },
+    {
+      "id": 4,
+      "nomeProduto": "Moto G2",
+      "valor": 1500,
+      "quantidade": 11,
+      "marcaId": 3
+    },
+    {
+      "id": 5,
+      "nomeProduto": "A9 Plus",
+      "valor": 2600,
+      "quantidade": 9,
+      "marcaId": 1
+    }
+  ],
+  "marcas": [
+    {
+      "id": 1,
+      "nomeMarca": "Samsung"
+    },
+    {
+      "id": 2,
+      "nomeMarca": "Apple"
+    },
+    {
+      "id": 3,
+      "nomeMarca": "Microsoft"
+    },
+    {
+      "id": 4,
+      "nomeMarca": "Motorola"
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "nomeAdmin": "Admin"
+    },
+    {
+      "nomeAdmin": "Ricardo",
+      "id": 2
+    },
+    {
+      "nomeAdmin": "Natalia",
+      "id": 3
+    }
+  ]
+}

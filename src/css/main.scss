@@ -1,0 +1,29 @@
+$my-purple: #3F1E4D;
+$my-green: #C5D86D;
+$my-red: #D7263D;
+$my-orange: #FF6F59;
+$my-teal: #309897;
+$my-blue: #364DFB;
+$my-lightblue: #4EC4FB;
+$my-lightgreen: #59DD85;
+$my-yellow: #F9DD5C;
+$my-dark: #343a40;
+$my-dark-lighter: #495057;
+$my-dark-light: #ced4da;
+
+$theme-colors: (
+    "my-purple": $my-purple,
+    "my-green": $my-green,
+    "my-red": $my-red,
+    "my-orange": $my-orange,
+    "my-teal": $my-teal,
+    "my-blue": $my-blue,
+    "my-lightblue": $my-lightblue,
+    "my-lightgreen": $my-lightgreen,
+    "my-yellow": $my-yellow,
+    "my-dark": $my-dark,
+    "my-dark-lighter": $my-dark-lighter,
+    "my-dark-light": $my-dark-light
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

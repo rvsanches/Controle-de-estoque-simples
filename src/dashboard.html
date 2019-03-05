@@ -44,15 +44,83 @@
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                <div class="tab-pane fade show pt-3 px-3 active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                    <form id="form-add-produto">
+                        <div class="form-group">
+                            <label for="input-produto-nome">Nome do produto</label>
+                            <input type="text" class="form-control" id="input-produto-nome" aria-describedby="nome-help" placeholder="Produto...">
+                            <small id="nome-help" class="form-text text-muted">Digite o nome do produto, exemplo: S10 Plus</small>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="input-produto-qtdade">Quantidade</label>
+                                    <input type="text" class="form-control" id="input-produto-qtdade" aria-describedby="qtdade-help" placeholder="1...">
+                                    <small id="qtdade-help" class="form-text text-muted">Digite somente números</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="input-produto-valor">Valor</label>
+                                    <input type="text" class="form-control" id="input-produto-valor" aria-describedby="valor-help" placeholder="R$ 1...">
+                                    <small id="valor-help" class="form-text text-muted">Digite somente números</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Marca do produto</label>
+                            <select class="form-control" id="select-marcas">
+                                <option selected>Escoha 1 marca...</option>
+                            </select>
+                            <small id="nome-help" class="form-text text-muted">Selecione a marca do produto</small>
+                        </div>
+                        <button type="submit" class="btn btn-my-teal">Adicionar produto</button>
+                    </form>
+
+                </div>
+                <div class="tab-pane fade pt-3 px-3" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    
+                    <form id="form-add-marca">
+                        <div class="form-group">
+                            <label for="input-marca-nome">Nome da marca</label>
+                            <input type="text" class="form-control" id="input-marca-nome" aria-describedby="marca-help" placeholder="Marca...">
+                            <small id="marca-help" class="form-text text-muted">Digite o nome da marca, exemplo: Samsung</small>
+                        </div>
+                        <button type="submit" class="btn btn-my-teal">Adicionar marca</button>
+                    </form> 
+
+                </div>
             </div>
 
         </div>
 
-        <div class="col-8">
+        <div class="col-8 p-5">
 
+            <div class="card bg-my-dark-light border-0 mt-5">
+                <div class="card-body p-2">
+                    <div class="row no-gutters">
+                        <div class="col-3">
+                            <h5 class="text-secondary">Produto</h5>
+                        </div>
+                        <div class="col-3">
+                            <h5 class="text-secondary">Marca</h5>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="text-secondary">Quantidade</h5>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="text-secondary">Valor</h5>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="text-secondary">Ações</h5s>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <ul id="lista-produtos" class="list-unstyled">
+            </ul>
 
         </div>
 

@@ -34,6 +34,20 @@
       "valor": 2600,
       "quantidade": 9,
       "marcaId": 1
+    },
+    {
+      "nomeProduto": "S9 Plus",
+      "valor": "2800",
+      "quantidade": "2",
+      "marcaId": "1",
+      "id": 6
+    },
+    {
+      "nomeProduto": "LifeChat LX-3000",
+      "valor": "170",
+      "quantidade": "1",
+      "marcaId": "3",
+      "id": 7
     }
   ],
   "marcas": [
@@ -52,6 +66,42 @@
     {
       "id": 4,
       "nomeMarca": "Motorola"
+    },
+    {
+      "nomeMarca": "Lenovo",
+      "id": 5
+    },
+    {
+      "nomeMarca": "Sony",
+      "id": 6
+    },
+    {
+      "nomeMarca": "Dell",
+      "id": 7
+    },
+    {
+      "nomeMarca": "Nintendo",
+      "id": 8
+    },
+    {
+      "nomeMarca": "teste",
+      "id": 9
+    },
+    {
+      "nomeMarca": "nova",
+      "id": 10
+    },
+    {
+      "nomeMarca": "nova",
+      "id": 11
+    },
+    {
+      "nomeMarca": "oi",
+      "id": 12
+    },
+    {
+      "nomeMarca": "as",
+      "id": 13
     }
   ],
   "admins": [
@@ -66,6 +116,14 @@
     {
       "nomeAdmin": "Natalia",
       "id": 3
+    },
+    {
+      "nomeAdmin": "Ricardo",
+      "id": 4
+    },
+    {
+      "nomeAdmin": "Ricardo Sanches",
+      "id": 5
     }
   ]
 }

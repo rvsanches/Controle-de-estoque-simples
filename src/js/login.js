@@ -14,9 +14,10 @@ const novoAdmin = () => {
 }
 
 const nomeLogin = document.querySelector("#inputNome");
-const btnLogin = document.querySelector("#btnLogin");
+const btnLogin = document.querySelector("#formLogin");
 
-btnLogin.addEventListener("click", () => {
+btnLogin.addEventListener("submit", event => {
+    event.preventDefault();
     if (!nomeLogin.value) {
         nomeLogin.classList.add("is-invalid");
     } else {

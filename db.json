@@ -74,34 +74,6 @@
     {
       "nomeMarca": "Sony",
       "id": 6
-    },
-    {
-      "nomeMarca": "Dell",
-      "id": 7
-    },
-    {
-      "nomeMarca": "Nintendo",
-      "id": 8
-    },
-    {
-      "nomeMarca": "teste",
-      "id": 9
-    },
-    {
-      "nomeMarca": "nova",
-      "id": 10
-    },
-    {
-      "nomeMarca": "nova",
-      "id": 11
-    },
-    {
-      "nomeMarca": "oi",
-      "id": 12
-    },
-    {
-      "nomeMarca": "as",
-      "id": 13
     }
   ],
   "admins": [
@@ -124,6 +96,10 @@
     {
       "nomeAdmin": "Ricardo Sanches",
       "id": 5
+    },
+    {
+      "nomeAdmin": "Ricardo Sanches",
+      "id": 6
     }
   ]
 }

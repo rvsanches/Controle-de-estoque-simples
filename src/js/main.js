@@ -35,11 +35,12 @@ const trazMarcas = () => {
 }
 trazMarcas();
 
-const trazProdutos = () => {
-    API.get("/produtos")
+const trazAmbos = () => {
+    API.getBoth("/produtos", "/marcas")
     .then(data => {
         console.log(data);
-        data.forEach(function(produto) {
+        data[0].forEach(function(produto) {
+            const nomeDaMarca = data[1][produto.marcaId - 1].nomeMarca;
             let itemQuantidade = "";
             if (produto.quantidade <= 1) {
                 itemQuantidade = `${produto.quantidade} unidade`
@@ -48,23 +49,24 @@ const trazProdutos = () => {
             }
             listaProdutos.insertAdjacentHTML("afterbegin", `
             <li>
-                <div class="card shadow-sm mb-3">
+                <div class="card shadow mb-3 border-my-dark-light">
                     <div class="card-body p-2">
-                        <div class="row no-gutters">
+                        <div class="row no-gutters align-items-center">
                             <div class="col-3">
                                 ${produto.nomeProduto}
                             </div>
                             <div class="col-3">
-                                ${produto.marcaId}
+                                ${nomeDaMarca}
                             </div>
-                            <div class="col-2">
+                            <div class="col-2 text-center">
                                 ${itemQuantidade}
                             </div>
-                            <div class="col-2">
+                            <div class="col-2 text-center">
                                 R$ ${produto.valor}
                             </div>
-                            <div class="col-2">
-                                
+                            <div class="col-2 text-right">
+                                <button class="btn btn-sm btn-outline-my-blue">Editar</button>
+                                <button class="btn btn-sm btn-outline-my-red ml-2">Excluir</button>
                             </div>
                         </div>
                     </div>
@@ -74,7 +76,7 @@ const trazProdutos = () => {
         })
     })
 }
-trazProdutos();
+trazAmbos();
 
 const addNovoProduto = () => {
     API.post("/produtos", {

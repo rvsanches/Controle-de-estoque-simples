@@ -26,4 +26,6 @@ $theme-colors: (
     "my-dark-light": $my-dark-light
 );
 
+$link-color: $my-orange;
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

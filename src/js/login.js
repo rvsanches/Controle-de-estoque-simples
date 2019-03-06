@@ -9,7 +9,7 @@ const novoAdmin = () => {
         nomeAdmin: nomeLogin.value
     }).then(data => {
         console.log(data);
-        window.location.href = "dashboard.html";
+        // window.location.href = "dashboard.html";
     })
 }
 

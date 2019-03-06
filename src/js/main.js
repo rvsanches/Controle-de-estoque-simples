@@ -98,21 +98,21 @@ const addNovaMarca = () => {
 }
 
 formProduto.addEventListener("submit", event => {
-    event.preventDefault();
     if(!formProdutoNome.value) {
         formProdutoNome.classList.add("is-invalid");
     } else {
         formProdutoNome.classList.remove("is-invalid");
         addNovoProduto();
     }
+    event.preventDefault();
 })
 
 formMarca.addEventListener("submit", event => {
-    event.preventDefault();
     if(!formMarcaNome.value) {
         formMarcaNome.classList.add("is-invalid");
     } else {
         formMarcaNome.classList.remove("is-invalid");
         addNovaMarca();
     }
+    event.preventDefault();
 })

@@ -70,10 +70,6 @@
     {
       "nomeMarca": "Lenovo",
       "id": 5
-    },
-    {
-      "nomeMarca": "Sony",
-      "id": 6
     }
   ],
   "admins": [
@@ -86,40 +82,8 @@
       "id": 2
     },
     {
-      "nomeAdmin": "Jeferson",
+      "nomeAdmin": "Ricardo Sanches",
       "id": 3
-    },
-    {
-      "nomeAdmin": "Marcos",
-      "id": 4
-    },
-    {
-      "nomeAdmin": "Jeferson",
-      "id": 5
-    },
-    {
-      "nomeAdmin": "Taliton",
-      "id": 6
-    },
-    {
-      "nomeAdmin": "Jeferson",
-      "id": 7
-    },
-    {
-      "nomeAdmin": "Jeferson",
-      "id": 8
-    },
-    {
-      "nomeAdmin": "Ricardo Sanches",
-      "id": 9
-    },
-    {
-      "nomeAdmin": "Ricardo Sanches",
-      "id": 10
-    },
-    {
-      "nomeAdmin": "Jeferson",
-      "id": 11
     }
   ]
 }

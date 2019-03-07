@@ -9,14 +9,15 @@ const novoAdmin = () => {
         nomeAdmin: nomeLogin.value
     }).then(data => {
         console.log(data);
-        // window.location.href = "dashboard.html";
+        window.location.href = "./dashboard.html";
     })
 }
 
 const nomeLogin = document.querySelector("#inputNome");
-const btnLogin = document.querySelector("#formLogin");
+const formLogin = document.querySelector("#formLogin");
+const btnLogin = document.querySelector("#btnLogin");
 
-btnLogin.addEventListener("submit", event => {
+formLogin.addEventListener("submit", event => {
     event.preventDefault();
     if (!nomeLogin.value) {
         nomeLogin.classList.add("is-invalid");

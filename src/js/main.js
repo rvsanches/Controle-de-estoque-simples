@@ -70,31 +70,27 @@ const trazAmbos = () => {
             } else {
                 itemQuantidade = `${produto.quantidade} unidades`
             }
-            listaProdutos.insertAdjacentHTML("afterbegin", `
-            <li>
-                <div class="card shadow-sm mb-3 border-my-dark-light">
-                    <div class="card-body p-2">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-3">
-                                ${produto.nomeProduto}
-                            </div>
-                            <div class="col-3">
-                                ${nomeDaMarca}
-                            </div>
-                            <div class="col-2 text-center">
-                                ${itemQuantidade}
-                            </div>
-                            <div class="col-2 text-center">
-                                R$ ${produto.valor}
-                            </div>
-                            <div class="col-2 text-right">
-                                <button class="btn btn-sm btn-outline-my-blue">Editar</button>
-                                <button class="btn btn-sm btn-outline-my-red ml-2">Excluir</button>
-                            </div>
+            listaProdutos.insertAdjacentHTML("beforeend", `
+                <li class="list-group-item border-my-dark-light">
+                    <div class="row align-items-center">
+                        <div class="col-3">
+                            <span class="font-weight-bold">${produto.nomeProduto}</span>
+                        </div>
+                        <div class="col-2">
+                            ${nomeDaMarca}
+                        </div>
+                        <div class="col-2">
+                            R$ ${produto.valor}
+                        </div>
+                        <div class="col-2">
+                            ${itemQuantidade}
+                        </div>
+                        <div class="col-3 text-right">
+                            <button class="btn btn-sm btn-outline-my-teal">Editar</button>
+                            <button class="btn btn-sm btn-outline-my-red ml-2">Excluir</button>
                         </div>
                     </div>
-                </div>
-            </li>
+                </li>
             `)
         })
     })

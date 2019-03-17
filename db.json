@@ -48,6 +48,13 @@
       "quantidade": "1",
       "marcaId": "3",
       "id": 7
+    },
+    {
+      "nomeProduto": "G7 15000",
+      "valor": "6000",
+      "quantidade": "2",
+      "marcaId": "5",
+      "id": 8
     }
   ],
   "marcas": [
@@ -84,6 +91,14 @@
     {
       "nomeAdmin": "Ricardo Sanches",
       "id": 3
+    },
+    {
+      "nomeAdmin": "Ricardo Sanches",
+      "id": 4
+    },
+    {
+      "nomeAdmin": "Ricardo Sanches",
+      "id": 5
     }
   ]
 }

@@ -71,7 +71,7 @@ const trazAmbos = () => {
                 itemQuantidade = `${produto.quantidade} unidades`
             }
             listaProdutos.insertAdjacentHTML("beforeend", `
-                <li class="list-group-item border-my-dark-light">
+                <li class="list-group-item bg-my-dark-light"> 
                     <div class="row align-items-center">
                         <div class="col-3">
                             <span class="font-weight-bold">${produto.nomeProduto}</span>
@@ -86,7 +86,7 @@ const trazAmbos = () => {
                             ${itemQuantidade}
                         </div>
                         <div class="col-3 text-right">
-                            <button class="btn btn-sm btn-outline-my-teal">Editar</button>
+                            <button class="btn btn-sm btn-outline-my-purple">Editar</button>
                             <button class="btn btn-sm btn-outline-my-red ml-2">Excluir</button>
                         </div>
                     </div>

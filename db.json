@@ -55,6 +55,20 @@
       "quantidade": "2",
       "marcaId": "5",
       "id": 8
+    },
+    {
+      "nomeProduto": "S10 Plus",
+      "valor": "8900",
+      "quantidade": "3",
+      "marcaId": "1",
+      "id": 9
+    },
+    {
+      "nomeProduto": "G3 15000",
+      "valor": "5500",
+      "quantidade": "2",
+      "marcaId": "6",
+      "id": 10
     }
   ],
   "marcas": [
@@ -77,6 +91,10 @@
     {
       "nomeMarca": "Lenovo",
       "id": 5
+    },
+    {
+      "nomeMarca": "Dell",
+      "id": 6
     }
   ],
   "admins": [
@@ -99,6 +117,14 @@
     {
       "nomeAdmin": "Ricardo Sanches",
       "id": 5
+    },
+    {
+      "nomeAdmin": "Marcos",
+      "id": 6
+    },
+    {
+      "nomeAdmin": "Ricardo",
+      "id": 7
     }
   ]
 }

@@ -28,4 +28,8 @@ $theme-colors: (
 
 $link-color: $my-orange;
 
+.myToast {
+    z-index: 5000 !important;
+}
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

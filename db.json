@@ -50,25 +50,11 @@
       "id": 7
     },
     {
-      "nomeProduto": "G7 15000",
-      "valor": "6000",
-      "quantidade": "2",
-      "marcaId": "5",
-      "id": 8
-    },
-    {
-      "nomeProduto": "S10 Plus",
-      "valor": "8900",
-      "quantidade": "3",
-      "marcaId": "1",
-      "id": 9
-    },
-    {
       "nomeProduto": "G3 15000",
-      "valor": "5500",
+      "valor": "5000",
       "quantidade": "2",
       "marcaId": "6",
-      "id": 10
+      "id": 8
     }
   ],
   "marcas": [
@@ -103,28 +89,8 @@
       "nomeAdmin": "Admin"
     },
     {
-      "nomeAdmin": "Ricardo",
+      "nomeAdmin": "Ricardo Sanches",
       "id": 2
-    },
-    {
-      "nomeAdmin": "Ricardo Sanches",
-      "id": 3
-    },
-    {
-      "nomeAdmin": "Ricardo Sanches",
-      "id": 4
-    },
-    {
-      "nomeAdmin": "Ricardo Sanches",
-      "id": 5
-    },
-    {
-      "nomeAdmin": "Marcos",
-      "id": 6
-    },
-    {
-      "nomeAdmin": "Ricardo",
-      "id": 7
     }
   ]
 }

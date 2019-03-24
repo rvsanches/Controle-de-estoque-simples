@@ -1,27 +1,9 @@
-import {Backend} from "./backend.js";
+import { Backend } from "./backend.js";
+import { Toast } from "./toast.js";
 
 const API = new Backend();
 API.setBaseUrl("http://localhost:3000");
 console.log(API.getBaseUrl());
-
-const listaToasts = [
-    {
-        titulo: "Novo produto",
-        desc: "Produto adicionado com sucesso"
-    },
-    {
-        titulo: "Edição bem-sucedida",
-        desc: "Produto editado com sucesso"
-    },
-    {
-        titulo: "Exclusão realizada",
-        desc: "Produto excluído com sucesso"
-    },
-    {
-        titulo: "Nova marca",
-        desc: "Marca adicionada com sucesso"
-    }
-];
 
 const spanNome = document.querySelector("#nomeMenu");
 const selectMarcas = document.querySelector("#select-marcas");
@@ -86,12 +68,26 @@ const trazAmbos = () => {
                             ${itemQuantidade}
                         </div>
                         <div class="col-3 text-right">
-                            <button class="btn btn-sm btn-outline-my-purple">Editar</button>
+                            <button class="btn btn-sm btn-outline-my-purple" data-toggle="modal" data-target="#myModal">Editar</button>
                             <button class="btn btn-sm btn-outline-my-red ml-2">Excluir</button>
                         </div>
                     </div>
                 </li>
             `)
+
+            /*
+            const editarProduto = () => {
+                API.patch(`/produtos/${produto.id}`, {
+                    nomeProduto: formProdutoNome.value,
+                    valor: formProdutoValor.value,
+                    quantidade: formProdutoQtdade.value,
+                    marcaId: selectMarcas.options[selectMarcas.selectedIndex].dataset.marca
+                }).then(data => {
+                    console.log(data);
+                });
+            }
+            */
+
         })
     })
 }
@@ -105,7 +101,10 @@ const addNovoProduto = () => {
         marcaId: selectMarcas.options[selectMarcas.selectedIndex].dataset.marca
     }).then(data => {
         console.log(data);
-    })
+    });
+
+    const novaMarcaForm = new Toast(`Novo produto: ${formProdutoNome.value}`, `Novo produto adicionado com sucesso`);
+    novaMarcaForm.fazNovoToast();
 }
 
 const addNovaMarca = () => {
@@ -114,6 +113,9 @@ const addNovaMarca = () => {
     }).then(data => {
         console.log(data);
     })
+    
+    const novaMarcaForm = new Toast(`Nova marca: ${formMarcaNome.value}`, `Nova marca adicionada com sucesso`);
+    novaMarcaForm.fazNovoToast();
 }
 
 formProduto.addEventListener("submit", event => {

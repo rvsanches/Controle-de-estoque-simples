@@ -1,4 +1,4 @@
-import {Backend} from "./backend.js";
+import { Backend } from "./backend.js";
 
 const API = new Backend();
 API.setBaseUrl("http://localhost:3000");

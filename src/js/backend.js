@@ -31,4 +31,15 @@ export class Backend {
         body: JSON.stringify(data)
       }).then(response => response.json());
     }
+
+    patch(endpoint, data = {}) {
+      return fetch(this.baseUrl + endpoint, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(data)
+      }).then(response => response.json());
+    }
 }
